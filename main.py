@@ -1,10 +1,6 @@
 import random
-from fastapi import FastAPI
 
-app = FastAPI()
-@app.get("/")
-
-async def gerar_pergunta(operacao):
+def gerar_pergunta(operacao):
     num1 = random.randint(1, 10)
     num2 = random.randint(1, 10)
 
